@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+    <div class="controls">
+        <div>
+            <label>Background:</label>
+            <select id="bgColor">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Obstacle Shape:</label>
+            <select id="pipeShape">
+                <option value="rect">Rectangles</option>
+                <option value="square">Squares</option>
+                <option value="circle">Circles</option>
+                <option value="heart">Hearts</option>
+            </select>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+    <h2 id="score">Flappy Points: 0</h2>
+    <div id="trademark">© Flappy Custom Creations™</div>
+    <h2 id="highScore">High Score: 0</h2>
+
+    <div id="celebration">✨ NEW HIGH SCORE! ✨</div>
+
+    <div id="gameOver">
+        <div class="game-over-box">
+            <h1>GAME OVER</h1>
+            <p>Press SPACE or Click to Restart</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
